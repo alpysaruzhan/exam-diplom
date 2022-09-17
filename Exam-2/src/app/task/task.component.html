@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>ToDo List</h2>
+  <div class="f">
+    <form action="">
+      <input [(ngModel)]="text" placeholder="Text.." name="text" type="text">
+        </form>
+    <button class="butt" (click)="clickTask(text)">Add</button>    
+  </div>
+  <div class="cont" *ngFor="let task of tasks">
+    <span>{{task.name}}</span>
+    <button (click)="deleteTask(task)" class="butt">X</button>
+  </div>
+</div>
+<!--<div class="container">-->
+
+<!--  <app-header></app-header>-->
+
+<!--  <router-outlet></router-outlet>-->
+<!--  <app-footer></app-footer>-->
+<!--</div>-->
